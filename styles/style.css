@@ -81,9 +81,7 @@ ol {
   font-weight: 700;
 }
 
-
 /* result */
-
 
 .result {
   grid-area: result;
@@ -175,9 +173,7 @@ ol {
   align-self: end;
 }
 
-
 /* search-form */
-
 
 .content__details {
   grid-area: content__details;
@@ -272,7 +268,6 @@ ol {
   margin-block-start: 30px;
 }
 
-
 /* блок управления поведениями*/
 
 input:focus {
@@ -330,12 +325,16 @@ input:focus {
   background-color: #545050;
 }
 
+.content__card-link:active > .content__video-card {
+  background-color: #545050;
+}
+
 .content__card-link:focus-visible {
   outline: 1px solid #fff;
   outline-offset: 1px;
 }
 
-.content__card-link:hover > .content__video-card {
+.content__card-link:hover:not(:active) > .content__video-card {
   text-decoration: underline;
   text-underline-offset: 1px;
 }
